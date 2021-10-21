@@ -10,8 +10,7 @@ document.querySelectorAll(".dropdown").forEach((dropDownWrapper) => {
 
   dropdownButton.addEventListener("click", () => {
     dropdownList.classList.toggle("js-visible");
-    dropdownButton.classList.toggle("js-active");
-    dropdownButton.innerText = "Pick one";
+    dropdownButton.classList.toggle("js-active");    
     dropdownListItems.forEach((item) => {
       item.addEventListener("click", function (e) {
         dropdownListItems.forEach((el) => {
